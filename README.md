@@ -1,5 +1,5 @@
 # react-upload
-This is react repo
+This is the repository which help in deploying react app on Github Page
 Procedure :
 
 1- First create a repository named my-app using create-react-app.
@@ -24,3 +24,17 @@ Second in the existing scripts property we to need to add predeploy and deploy.
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 }
+
+4- Create a Github repository and initialize it and add it as a remote in your local git repository.
+
+Now, create a remote GitHub repository with your app name and go back initialize this
+git init
+add it as remote
+git remote add origin git@github.com:username/my-app.git
+
+5- Now deploy it to GitHub Pages.
+
+just run the following command :
+
+npm run deploy
+The  app will be pulished on hompage url
